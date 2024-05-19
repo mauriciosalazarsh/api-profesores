@@ -1,0 +1,14 @@
+CREATE SCHEMA api_profesores DEFAULT CHARACTER SET utf8mb4;
+
+USE api_profesores;
+
+CREATE TABLE profesores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255),
+    apellido VARCHAR(255),
+    título VARCHAR(255),
+    especialidad VARCHAR(255)
+);
+
+INSERT INTO profesores (nombre, apellido, título, especialidad) VALUES ('Luis', 'García', 'Dr.', 'Matemáticas');
+INSERT INTO profesores (nombre, apellido, título, especialidad) VALUES ('Marta', 'Rojas', 'Dra.', 'Física');
